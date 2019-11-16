@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+    .main {
+      height: 620px;
+      padding-top: 80px;
+    }
+
+    .inner {
+      margin-right: 380px;
+      margin-left: 380px;
+      height: 450px;
+      border-radius: 2%;
+    }
+  </style>
+  <body class="teal">
+    <nav class=" white z-depth-5">
+      <ul id="dropdown3" class="dropdown-content">
+        <li><a href="#!">Change Password</a></li>
+      </ul>
+      
+        <div class="nav-wrapper">
+          <a href="#" class="left black-text" style="font-size:20px; padding-left:30px;"
+            >Oriental Institute of Science and Technology</a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                        <a class="dropdown-button"
+                        data-beloworigin="true"
+                        data-hover="true"
+                        data-constrainwidth="false"
+                        href="#!"
+                        data-activates="dropdown3"
+                          ><i class="material-icons large black-text " style="font-size:30px;padding-right:30px;"
+                            >settings</i
+                          ></a
+                        >
+                      </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-------------------nav end------------------------->
+    <div class="main teal">
+      <div class="inner card-panel z-depth-5 hover">
+        <div class="row" >
+          <h4>  &nbsp; &nbsp;   &nbsp;Students' Academics Management System</h4>
+        </div>
+        <div class="row">
+          <div class="col l4 ">
+            <img src="images/clglogo.png" class="responsive-img" />
+          </div>
+          <div class="col l8">
+          <form id ="loginForm" name="LoginForm" action="loginmember">
+            <div class="input-field">
+              <i class="material-icons prefix">person</i>
+              <input type="text" id="username" name="login" />
+              <label for="username">UserName</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">create</i>
+              <input type="password" id="password" name="password" />
+              <label for="password">password</label>
+            </div>
+            <div class="input-field">
+                    <i class="material-icons prefix black-text">group</i>
+               <select  name="category" id="category" >
+                 <option class="grey-text" value="" >user</option>
+                 <option value="student">Student</option>
+                 <option value="faculty" >Teacher</option>
+                 <option value="admin">Admin</option>
+                 
+               </select>
+             </div>
+            <div>&nbsp; </div>
+            <div class="row center">
+              <button
+                class="waves-effect waves-light btn-large pulse teal white-text"
+              >
+                <i class="material-icons left">near_me</i>Sign In
+              </button>
+            </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer white">
+      <div class="footer-copyright center">
+        <div class="container black-text">
+         © 2019 Copyright OIST
+        </div>
+      </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>$(document).ready(function() {
+        $("select").material_select();
+       
+      });</script>
+</body>
+</html>
